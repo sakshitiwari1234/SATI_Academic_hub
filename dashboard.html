@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #002244;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      margin-bottom: 0.8rem;
+      color: #002244;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 0.5rem;
+      text-align: center;
+      background-color: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0066cc;
+    }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      padding: 1rem;
+      background-color: #002244;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Your Academic Dashboard</h1>
+    <span>Logged in as: student@example.com</span>
+  </header>
+
+  <div class="container">
+    <div class="subject-grid">
+      <div class="card" ><a href="ai.html"> 
+
+          <h2>Artificial Intelligence</h2>
+      </a>
+        <p>Explore notes and past year questions for AI subject.</p>
+        <div class="btn-group">
+          <a href="#" class="btn">Notes</a>
+          <a href="#" class="btn">PYQs</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="data_structure.html">
+
+            <h2>Data Structures</h2> 
+        </a>
+        <p>Structured notes and important questions to boost your preparation.</p>
+        <div class="btn-group">
+          <a href="#" class="btn">Notes</a>
+          <a href="#" class="btn">PYQs</a>
+        </div>
+      </div>
+
+      <div class="card"><a href="ML.html">
+          <h2>Machine Learning</h2></a>
+        <p>All material related to ML in one place.</p>
+        <div class="btn-group">
+          <a href="#" class="btn">Notes</a>
+          <a href="#" class="btn">PYQs</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Computer Networks</h2><a href="Computer_Network.html"></a>
+        <p>Understand and revise CN concepts with our curated resources.</p>
+        <div class="btn-group">
+          <a href="#" class="btn">Notes</a>
+          <a href="#" class="btn">PYQs</a>
+        </div>
+      </div>
+
+      <div class="card"><a href="dbms.html"><h2>Database Management</h2></a>
+        <p>Complete DBMS reference material for exams.</p>
+        <div class="btn-group">
+          <a href="#" class="btn">Notes</a>
+          <a href="#" class="btn">PYQs</a>
+        </div>
+      </div>
+
+      <div class="card"><a href="os.html"><h2>Operating Systems</h2>
+      </a>
+        <p>Resources covering all major topics in OS.</p>
+        <div class="btn-group">
+          <a href="#" class="btn">Notes</a>
+          <a href="#" class="btn">PYQs</a>
+        </div>
+      </div>
+
+      <div class="card" >
+        <h2>Web Development</h2>
+        <p>Notes and guides on frontend and backend development.</p>
+        <div class="btn-group">
+          <a href="#" class="btn">Notes</a>
+          <a href="#" class="btn">PYQs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 SATI Academic Resource Portal. All rights reserved.
+  </footer>
+
+</body>
+</html>
